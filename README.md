@@ -60,15 +60,3 @@ Open [http://localhost:8501](http://localhost:8501).
 
 ---
 
-## GitHub + LinkedIn Showcase Tips
-
-To make this portfolio piece stand out:
-
-1. Add 3-5 screenshots (home + each core page)
-2. Add one short demo GIF/video walkthrough
-3. Pin this repo on GitHub profile
-4. Share on LinkedIn with:
-   - the problem statement
-   - what metrics you tracked
-   - one key PM insight from the dashboard
-   - links to repo + live demo
