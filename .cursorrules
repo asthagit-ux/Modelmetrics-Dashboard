@@ -1,0 +1,40 @@
+# AI Product Analytics Dashboard — Cursor Rules
+
+## Project Overview
+This is a portfolio project for AI Product Management roles.
+It's a Streamlit dashboard that tracks analytics for an AI-powered SaaS product.
+Built by a beginner using Cursor AI. Keep code simple, well-commented, and readable.
+
+## Stack
+- Frontend/App: Streamlit (Python)
+- Database: SQLite (local, via utils/db.py)
+- Charts: Plotly (via components/charts.py)
+- Data: Seeded via data/seed_data.py (no real backend needed)
+
+## Project Structure
+- app.py → main entry point, navigation
+- pages/ → one file per dashboard page
+- components/ → reusable UI pieces (charts, KPI cards, sidebar)
+- utils/ → db connection and helper functions
+- data/ → schema + seed script
+
+## Dashboard Pages
+1. LLM Metrics — token usage, cost per query, latency, model comparison
+2. Feature Adoption — which AI features users are using and how often
+3. User Retention — DAU/WAU/MAU, cohort retention, churn signals
+4. Funnel — user journey from signup → first AI use → power user
+
+## Coding Rules
+- Always add comments explaining WHAT and WHY, not just what the code does
+- Use Plotly for all charts (not matplotlib)
+- Use st.metric() for KPI cards
+- Keep each page file under 150 lines — split into components if needed
+- Use utils/db.py for ALL database access, never raw sqlite3 calls in pages
+- Seed data should look realistic (not round numbers, include anomalies)
+- Color scheme: use a consistent palette defined in utils/helpers.py
+
+## AI PM Context
+When generating insights or copy for the dashboard, think like a product manager:
+- Surface actionable insights, not just numbers
+- Add "so what" callouts (e.g., "Latency spiked 40% on Dec 3 — correlates with model upgrade")
+- Use PM terminology: DAU, retention, activation, aha moment, north star metric
